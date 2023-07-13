@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container text-center rounded">
+        <h1>✅My ToDo's</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="addNew" placeholder="Add new...">
+                    </div>
+                    <button for="addNew" class="col-md-3 btn btn-success">Add</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row filters">
+            <div class="col-sm-4">
+                <p>Filter</p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All</option>
+                    <option value="1">House</option>
+                    <option value="2">Job</option>
+                    <option value="3">Fun</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <p>Sort</p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Added date</option>
+                    <option value="1">Last day</option>
+                    <option value="2">Last week</option>
+                    <option value="3">Last month</option>
+                </select>
+                <div class="glyphicon glyphicon-download">📅</div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <table class="table table-hover">
+                <thead>
+                    <td>Statue</td>
+                    <td>To Do</td>
+                    <td>Edit/Delete</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="form-check-input todoline" type="checkbox" value="" id="checkbox-3"></td>
+                        <td>Buy groceries for next week</td>
+                        <td><button class="btn btn-primary">✒️</button>
+                            <button class="btn btn-danger">✖️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input todoline" type="checkbox" value="" id="checkbox-3"></td>
+                        <td>Renew car insurance</td>
+                        <td><button class="btn btn-primary">✒️</button>
+                            <button class="btn btn-danger">✖️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input todoline" type="checkbox" value="" id="checkbox-3"></td>
+                        <td>Sign up for online course</td>
+                        <td><button class="btn btn-primary">✒️</button>
+                            <button class="btn btn-danger">✖️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- <div class="col-md-2">
+                <input class="form-check-input todoline" type="checkbox" value="" id="checkbox-3"><br>
+                <input class="form-check-input todoline" type="checkbox" value="" id="checkbox-3"><br>
+                <input class="form-check-input todoline" type="checkbox" value="" id="checkbox-3">
+            </div>
+            <div class="col-md-6">
+                <p class="todoline">Buy groceries for next week</p>
+                <p class="todoline">Renew car insurance</p>
+                <p class="todoline">Sign up for online course</p>
+            </div>
+            <div class="col-md-4">
+                <div class="controllers">
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Remove</button>
+                </div>
+                <div class="controllers">
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Remove</button>
+                </div>
+                <div class="controllers">
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Remove</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
